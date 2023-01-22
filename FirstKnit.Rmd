@@ -1,0 +1,22 @@
+---
+title: "First RMD Example"
+author: "James Beam"
+date: "2023-01-22"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Employees
+```{r, echo=FALSE}
+ID = c(1,2,3,4)
+Last = c('Duck','Mouse','Mouse','Bunny')
+First = c('Donald','Mickey','Mini','Buggs')
+Age = c(41,45,45,36)
+Salary = c(45900,51300,62300,52000)
+Tenure = c(5,7,7,9)
+Employees <- data.frame(ID,Last,First,Age,Salary,Tenure)
+show(Employees)
+```
